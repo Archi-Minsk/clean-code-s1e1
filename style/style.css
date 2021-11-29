@@ -4,6 +4,7 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+
 input,button{
     outline:none;
 }
@@ -23,6 +24,8 @@ ul {
 .more-info{
     font-family: fantasy, cursive;
     width: 100%;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .form-container{
     display: block;
@@ -45,10 +48,12 @@ ul {
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+    
 }
 .btn:hover {
     color: #3a3A3a;
 }
+
 /* Heading */
 .title{
     color: #333;
@@ -94,20 +99,20 @@ input[type="text"]:focus {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.list > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.list > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+.list > label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.list > input[type="text"] {
     width: 226px
 }
 .img-remove{
@@ -120,25 +125,28 @@ li >    input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks {
-    text-decoration: line-through;
+.completed-tasks {
+    /* text-decoration: line-through; */
     color: #888;
+}
+.task-dekor{
+    text-decoration: line-through;
 }
 
 /* Edit Task */
-.pay-mode input[type=text] {
+.list input[type=text] {
     display:none
 }
 
-
-.edit-mode input[type=text] {
+.list.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-.edit-mode label {
+.list.edit-mode label {
     display:none;
 }
+
 
 @media (max-width:768px) {
 
