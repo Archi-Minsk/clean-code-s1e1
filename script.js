@@ -121,8 +121,7 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted=function(){
     console.log("Complete Task...");
-    var label=document.querySelector("label");
-    label.classList.add('task-dekor')
+    
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     

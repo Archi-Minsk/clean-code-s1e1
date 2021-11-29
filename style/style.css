@@ -5,7 +5,7 @@ body {
     font-family: Lato, sans-serif;
 }
 
-input,button{
+input{
     outline:none;
 }
 ul {
@@ -41,6 +41,7 @@ ul {
     display: flex;
 }
 .btn {
+    outline:none;
     background: none;
     border: 0px;
     color: #888;
@@ -126,12 +127,10 @@ input[type="text"]:focus {
 
 /* Completed */
 .completed-tasks {
-    /* text-decoration: line-through; */
+    text-decoration: line-through;
     color: #888;
 }
-.task-dekor{
-    text-decoration: line-through;
-}
+
 
 /* Edit Task */
 .list input[type=text] {
